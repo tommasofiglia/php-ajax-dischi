@@ -24417,6 +24417,29 @@ nav .container img {
   height: 100%;
 }
 
+main .container {
+  display: flex;
+  flex-wrap: wrap;
+}
+main .container .card {
+  height: 250px;
+  width: 170px;
+  background-color: black;
+}
+main .container .card img {
+  width: 150px;
+  height: 150px;
+  margin: 10px;
+}
+main .container .card .titolo {
+  color: white;
+  text-align: center;
+}
+main .container .card h5 {
+  color: grey;
+  text-align: center;
+}
+
 * {
   margin: 0;
   padding: 0;

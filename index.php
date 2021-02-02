@@ -21,8 +21,16 @@
 
     <!-- Start main -->
     <main>
-      <div class="container padding-top-80">
+      <div class="container padding-top-20">
+        <div class="card margin-left-35 margin-right-35 margin-top-70">
 
+          <img src="dist/img/egreen.jpg" alt="">
+          <h4 class="titolo fs-18">we</h4>
+          <h5 class="autore fs-15 margin-top-10">titolo</h5>
+          <h5 class="anno">anno di uscita</h5>
+
+
+        </div>
       </div>
     </main>
     <!-- End main -->
