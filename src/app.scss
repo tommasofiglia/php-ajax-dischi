@@ -1,3 +1,22 @@
-h1{
-  color: green;
+//Imports
+@import "partials/commons";
+@import "partials/utility";
+@import "partials/variables";
+@import "partials/mixin";
+@import "partials/navbar";
+@import "partials/main";
+
+// app scss
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: $background_body;
+}
+
+nav{
+  color: white;
 }

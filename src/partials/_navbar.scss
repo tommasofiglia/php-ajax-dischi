@@ -1,0 +1,13 @@
+nav{
+  height: 60px;
+  width: 100%;
+  background-color: black;
+  .container{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    img{
+      height: 100%;
+    }
+  }
+}

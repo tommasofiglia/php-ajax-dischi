@@ -1,0 +1,70 @@
+.container{
+  max-width: 960px;
+  margin: auto;
+}
+
+// Utility classes
+
+// Margins
+@for $i from 1 through 500 {
+  // vertical
+  .margin-v-#{$i}{
+    margin: #{$i}px 0;
+  }
+  // horizontal
+  .margin-h-#{$i}{
+    margin: 0 #{$i}px ;
+  }
+  // top
+  .margin-top-#{$i}{
+    margin-top: #{$i}px;
+  }
+  // bottom
+  .margin-bottom-#{$i}{
+    margin-bottom: #{$i}px;
+  }
+  // left
+  .margin-left-#{$i}{
+    margin-left: #{$i}px;
+  }
+  // right
+  .margin-right-#{$i}{
+    margin-right: #{$i}px;
+  }
+}
+
+// Paddings
+@for $i from 1 through 500 {
+  // vertical
+  .padding-v-#{$i}{
+    padding: #{$i}px 0;
+  }
+  // horizontal
+  .padding-h-#{$i}{
+    padding: 0 #{$i}px ;
+  }
+  // top
+  .padding-top-#{$i}{
+    padding-top: #{$i}px;
+  }
+  // bottom
+  .padding-bottom-#{$i}{
+    padding-bottom: #{$i}px;
+  }
+  // left
+  .padding-left-#{$i}{
+    padding-left: #{$i}px;
+  }
+  // right
+  .padding-right-#{$i}{
+    padding-right: #{$i}px;
+  }
+
+}
+
+// font-size
+@for $i from 1 through 100 {
+  .fs-#{$i}{
+    font-size: #{$i}px;
+  }
+}

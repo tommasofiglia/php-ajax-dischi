@@ -10,8 +10,22 @@
     <link rel="stylesheet" href="dist/css/app.css">
   </head>
   <body>
-    <h1>prova</h1>
 
+    <!-- Start Navbar -->
+    <nav>
+      <div class="container">
+        <img src="dist/img/spotify-logo.png" alt="">
+      </div>
+    </nav>
+    <!-- End navbar -->
+
+    <!-- Start main -->
+    <main>
+      <div class="container padding-top-80">
+
+      </div>
+    </main>
+    <!-- End main -->
 
 
 
@@ -20,6 +34,6 @@
 
     <!-- Script Javascript -->
     <script type="text/javascript" src="assets/js/main.js"></script>
-    
+
   </body>
 </html>
