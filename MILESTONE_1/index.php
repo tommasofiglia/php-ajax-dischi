@@ -1,5 +1,5 @@
 <?php
-  include 'db.php';
+  include __DIR__ . '/../database/db.php';
 ?>
 
 <!DOCTYPE html>
@@ -7,14 +7,14 @@
   <head>
     <meta charset="utf-8">
     <title>Dischi con php</title>
-    <link rel="stylesheet" href="dist/css/app.css">
+    <link rel="stylesheet" href="../dist/css/app.css">
   </head>
   <body>
 
     <!-- Start Navbar -->
     <nav>
       <div class="container">
-        <img src="dist/img/spotify-logo.png" alt="">
+        <img src="../dist/img/spotify-logo.png" alt="">
       </div>
     </nav>
     <!-- End navbar -->
@@ -37,12 +37,6 @@
       </div>
     </main>
     <!-- End main -->
-
-    <!-- Script vueJS -->
-    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
-
-    <!-- Script Javascript -->
-    <script type="text/javascript" src="assets/js/main.js"></script>
 
   </body>
 </html>
