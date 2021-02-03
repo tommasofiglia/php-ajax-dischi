@@ -7,29 +7,33 @@
   </head>
   <body>
 
-    <!-- Start Navbar -->
-    <nav>
-      <div class="container">
-        <img src="../dist/img/spotify-logo.png" alt="">
-      </div>
-    </nav>
-    <!-- End navbar -->
+    <div id="app">
 
-    <!-- Start main -->
-    <main>
-      <div class="container padding-top-20">
-
-
-        <div class="card margin-left-35 margin-right-35 margin-top-70">
-            <img src="" alt="">
-            <h4 class="titolo fs-18"></h4>
-            <h5 class="autore fs-15 margin-top-10"></h5>
-            <h5 class="anno"></h5>
+      <!-- Start Navbar -->
+      <nav>
+        <div class="container">
+          <img src="../dist/img/spotify-logo.png" alt="">
         </div>
+      </nav>
+      <!-- End navbar -->
 
-      </div>
-    </main>
-    <!-- End main -->
+      <!-- Start main -->
+      <main>
+        <div class="container padding-top-20">
+
+          <div class="card margin-left-35 margin-right-35 margin-top-70" v-for="song in songs">
+            <img :src="song.poster" alt="">
+            <h4 class="titolo fs-18">{{song.title}}</h4>
+            <h5 class="autore fs-15 margin-top-10">{{song.author}}</h5>
+            <h5 class="anno">{{song.year}}</h5>
+          </div>
+
+        </div>
+      </main>
+      <!-- End main -->
+
+    </div>
+
 
     <!-- Script Axios -->
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
@@ -38,7 +42,7 @@
     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
 
     <!-- Script Javascript -->
-    <script type="text/javascript" src="assets/js/main.js"></script>
+    <script type="text/javascript" src="../src/app.js"></script>
 
   </body>
 </html>
