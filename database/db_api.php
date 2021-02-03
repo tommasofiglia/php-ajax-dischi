@@ -4,6 +4,4 @@
   header('Content-Type: application/json');
   echo json_encode($database_songs);
 
-  var_dump($database_songs);
-
 ?>
