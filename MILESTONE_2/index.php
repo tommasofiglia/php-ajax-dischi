@@ -21,22 +21,24 @@
       <main>
 
         <div class="container padding-top-50">
-          <select class="fs-20" name="">
-            <option value="rock">All</option>
-            <option value="rock">Rock</option>
-            <option value="pop">Pop</option>
-            <option value="metal">Metal</option>
-            <option value="jazz">Jazz</option>
+          <select class="fs-20" v-model="selectedGenre" @change="changeGenre($event)">
+
+            <option v-for="genre in genres" :value="genre.value">
+              {{genre.text}}
+            </option>
+
           </select>
         </div>
 
         <div class="container">
+          <!-- Il v-if dice che se il genere della card ciclata è uguale al selectedGenre (ottenuto tramite la funzione richiamata in select con @change) allora stampa quelle card, in alternativa se il selectedGenre è pari ad All, allora tutte le card sono stampate -->
+          <div class="card margin-left-35 margin-right-35 margin-top-70" v-for="song in songs" v-if="song.genre == selectedGenre || selectedGenre == 'All' ? true : false">
 
-          <div class="card margin-left-35 margin-right-35 margin-top-70" v-for="song in songs">
             <img :src="song.poster" alt="">
             <h4 class="titolo fs-18">{{song.title}}</h4>
             <h5 class="autore fs-15 margin-top-10">{{song.author}}</h5>
             <h5 class="anno">{{song.year}}</h5>
+
           </div>
 
         </div>
