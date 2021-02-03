@@ -27,10 +27,18 @@
             <h5 class="anno"></h5>
         </div>
 
-
       </div>
     </main>
     <!-- End main -->
+
+    <!-- Script Axios -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <!-- Script vueJS -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+
+    <!-- Script Javascript -->
+    <script type="text/javascript" src="assets/js/main.js"></script>
 
   </body>
 </html>
