@@ -19,7 +19,18 @@
 
       <!-- Start main -->
       <main>
-        <div class="container padding-top-20">
+
+        <div class="container padding-top-50">
+          <select class="fs-20" name="">
+            <option value="rock">All</option>
+            <option value="rock">Rock</option>
+            <option value="pop">Pop</option>
+            <option value="metal">Metal</option>
+            <option value="jazz">Jazz</option>
+          </select>
+        </div>
+
+        <div class="container">
 
           <div class="card margin-left-35 margin-right-35 margin-top-70" v-for="song in songs">
             <img :src="song.poster" alt="">

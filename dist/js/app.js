@@ -7,7 +7,21 @@
   \********************/
 /***/ (() => {
 
+var app = new Vue({
+  el: "#app",
+  data: {
+    songs: []
+  },
+  methods: {},
+  mounted: function mounted() {
+    var _this = this;
 
+    axios.get('https://flynn.boolean.careers/exercises/api/array/music').then(function (response) {
+      _this.songs = response.data.response;
+      console.log(_this.songs);
+    });
+  }
+});
 
 /***/ }),
 
