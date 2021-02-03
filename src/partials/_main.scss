@@ -3,9 +3,10 @@ main{
     display: flex;
     flex-wrap: wrap;
     .card{
-      height: 250px;
+      height: 275px;
       width: 170px;
       background-color: black;
+      cursor: pointer;
         img{
           width: 150px;
           height: 150px;

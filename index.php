@@ -1,6 +1,6 @@
 <?php
-
- ?>
+  include 'db.php';
+?>
 
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
@@ -22,20 +22,21 @@
     <!-- Start main -->
     <main>
       <div class="container padding-top-20">
+
+        <?php foreach ($database_songs as $song){ ?>
         <div class="card margin-left-35 margin-right-35 margin-top-70">
 
-          <img src="dist/img/egreen.jpg" alt="">
-          <h4 class="titolo fs-18">we</h4>
-          <h5 class="autore fs-15 margin-top-10">titolo</h5>
-          <h5 class="anno">anno di uscita</h5>
-
+            <img src="<?php echo $song['poster']; ?>" alt="">
+            <h4 class="titolo fs-18"> <?php echo $song['title']; ?> </h4>
+            <h5 class="autore fs-15 margin-top-10"> <?php echo $song['author']; ?> </h5>
+            <h5 class="anno"> <?php echo $song['year']; ?> </h5>
 
         </div>
+        <?php } ?>
+
       </div>
     </main>
     <!-- End main -->
-
-
 
     <!-- Script vueJS -->
     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
